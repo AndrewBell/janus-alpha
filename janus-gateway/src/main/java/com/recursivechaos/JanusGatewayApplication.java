@@ -2,13 +2,11 @@ package com.recursivechaos;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
-@EnableDiscoveryClient
-public class SentenceServiceApplication {
+public class JanusGatewayApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SentenceServiceApplication.class, args);
+        SpringApplication.run(JanusGatewayApplication.class, args);
     }
 }

@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<artifactId>sentence-service</artifactId>
+	<artifactId>eureka-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -14,11 +14,11 @@
     <relativePath>../docker-pom</relativePath>
   </parent>
 
-  <dependencies>
+	<dependencies>
     <dependency>
       <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-eureka</artifactId>
+      <artifactId>spring-cloud-starter-eureka-server</artifactId>
     </dependency>
-  </dependencies>
+	</dependencies>
 
 </project>

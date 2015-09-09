@@ -1,7 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
 ### Java template
 target/
-*.jar
 *.war
 *.ear
 
@@ -13,6 +12,3 @@ hs_err_pid*
 
 ## Directory-based project format:
 .idea/
-
-## Property Files
-application*.yml

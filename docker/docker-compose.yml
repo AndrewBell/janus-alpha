@@ -1,12 +1,16 @@
 nounservice:
   image: janus/noun-service
   ports:
-   - "9100:8080"
+   - "9100:9100"
 adjectiveservice:
   image: janus/adjective-service
   ports:
-   - "9200:8080"
+   - "9200:9200"
 sentenceservice:
   image: janus/sentence-service
   ports:
-   - "9300:8080"
+   - "9300:9200"
+eurekaserver:
+  image: janus/eureka-server
+  ports:
+   - "8761:8761"

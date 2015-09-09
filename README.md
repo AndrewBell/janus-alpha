@@ -29,3 +29,9 @@ REST access to /adjectives
 REST service that tells us about the next big thing!
 
 'GET /sentence?next-big-thing=Facebook,%20but%20with%20Bitcoin'
+
+### eureka-server ###
+
+Service registration. You can view the monitor panel at
+
+`localhost:8761`
