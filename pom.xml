@@ -9,7 +9,7 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>janus-gateway</module>
+    <module>noun-service</module>
   </modules>
 
   <parent>
