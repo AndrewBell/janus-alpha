@@ -28,7 +28,7 @@ REST access to /adjectives
 
 REST service that tells us about the next big thing!
 
-'GET /sentence?next-big-thing=Facebook,%20but%20with%20Bitcoin'
+`GET /sentence?next-big-thing=Facebook,%20but%20with%20Bitcoin`
 
 ### eureka-server ###
 
