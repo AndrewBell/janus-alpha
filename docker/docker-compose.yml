@@ -1,0 +1,8 @@
+nounservice:
+  image: janus/noun-service
+  ports:
+   - "9100:8080"
+adjectiveservice:
+  image: janus/adjective-service
+  ports:
+   - "9200:8080"
