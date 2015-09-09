@@ -2,14 +2,20 @@ nounservice:
   image: janus/noun-service
   ports:
    - "9100:9100"
+  links:
+   - eurekaserver
 adjectiveservice:
   image: janus/adjective-service
   ports:
    - "9200:9200"
+  links:
+     - eurekaserver
 sentenceservice:
   image: janus/sentence-service
   ports:
    - "9300:9200"
+  links:
+     - eurekaserver
 eurekaserver:
   image: janus/eureka-server
   ports:

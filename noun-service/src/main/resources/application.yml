@@ -3,3 +3,6 @@ server:
 spring:
   application:
     name: noun-service
+  jpa:
+    hibernate:
+      ddl-auto: update
