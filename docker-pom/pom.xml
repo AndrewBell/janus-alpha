@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>janus-docker-pom</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <parent>
+    <groupId>com.recursivechaos</groupId>
+    <artifactId>janus-parent-pom</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+
+  <properties>
+    <docker.image.prefix>${project.artifactId}</docker.image.prefix>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+
+      <plugin>
+        <groupId>com.spotify</groupId>
+        <artifactId>docker-maven-plugin</artifactId>
+        <version>0.3.2</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>build</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
+          <forceTags>true</forceTags>
+          <imageTags>
+            <imageTag>${project.version}</imageTag>
+          </imageTags>
+          <baseImage>java</baseImage>
+          <entryPoint>
+            <!-- Don't let any auto-formatting break this line up -->
+            ["java", "-jar", "/${project.build.finalName}.jar"]
+          </entryPoint>
+          <resources>
+            <resource>
+              <!-- copy the service's jar file from target into the root directory of the image -->
+              <directory>${project.build.directory}</directory>
+              <include>${project.build.finalName}.jar</include>
+            </resource>
+          </resources>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+
+</project>

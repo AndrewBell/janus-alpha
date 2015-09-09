@@ -9,8 +9,9 @@
 
   <parent>
     <groupId>com.recursivechaos</groupId>
-    <artifactId>janus-parent-pom</artifactId>
+    <artifactId>janus-docker-pom</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <relativePath>../docker-pom</relativePath>
   </parent>
 
   <dependencies>
