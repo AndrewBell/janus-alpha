@@ -11,6 +11,7 @@
   <modules>
     <module>noun-service</module>
     <module>adjective-service</module>
+    <module>sentence-service</module>
   </modules>
 
   <parent>

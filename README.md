@@ -23,3 +23,9 @@ REST access to /nouns
 ### adjective-service ###
 
 REST access to /adjectives
+
+### sentence-service ###
+
+REST service that tells us about the next big thing!
+
+'GET /sentence?next-big-thing=Facebook,%20but%20with%20Bitcoin'

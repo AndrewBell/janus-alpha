@@ -6,3 +6,7 @@ adjectiveservice:
   image: janus/adjective-service
   ports:
    - "9200:8080"
+sentenceservice:
+  image: janus/sentence-service
+  ports:
+   - "9300:8080"
