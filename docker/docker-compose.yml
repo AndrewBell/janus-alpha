@@ -16,7 +16,15 @@ sentenceservice:
    - "9300:9200"
   links:
      - eurekaserver
-eurekaserver:
+eureka1:
   image: janus/eureka-server
   ports:
    - "8761:8761"
+  environment:
+    SPRING_PROFILE: 1
+eureka2:
+  image: janus/eureka-server
+  ports:
+   - "8762:8761"
+  environment:
+    SPRING_PROFILE: 2
