@@ -3,28 +3,35 @@ nounservice:
   ports:
    - "9100:9100"
   links:
-   - eurekaserver
+   - eureka1
+   - eureka2
 adjectiveservice:
   image: janus/adjective-service
   ports:
    - "9200:9200"
   links:
-     - eurekaserver
+     - eureka1
+     - eureka2
 sentenceservice:
   image: janus/sentence-service
   ports:
    - "9300:9200"
   links:
-     - eurekaserver
+     - eureka1
+     - eureka2
 eureka1:
   image: janus/eureka-server
   ports:
    - "8761:8761"
   environment:
     SPRING_PROFILE: 1
+  links:
+     - eureka2
 eureka2:
   image: janus/eureka-server
   ports:
    - "8762:8761"
   environment:
     SPRING_PROFILE: 2
+  links:
+    - eureka1
