@@ -1,5 +1,11 @@
 server:
   port: 9300
+
 spring:
   application:
     name: sentence-service
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.1.51:8761/eureka/
