@@ -1,7 +1,0 @@
-eureka:
-  instance:
-    hostname: eureka-1
-  client:
-    serviceUrl:
-      defaultZone: http://eureka-2/eureka/
-
