@@ -16,8 +16,19 @@
 
   <dependencies>
     <dependency>
+      <groupId>com.recursivechaos</groupId>
+      <artifactId>common-domain</artifactId>
+      <exclusions>
+        <exclusion>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </exclusion>
+      </exclusions>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
       <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-eureka</artifactId>
+      <artifactId>spring-cloud-starter-feign</artifactId>
     </dependency>
   </dependencies>
 
