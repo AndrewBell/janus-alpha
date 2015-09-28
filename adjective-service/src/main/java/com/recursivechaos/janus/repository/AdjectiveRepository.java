@@ -4,10 +4,9 @@
  * andrew@recursivechaos.com
  * Licensed under MIT License 2015. See license.txt for details.
  */
+package com.recursivechaos.janus.repository;
 
-package com.recursivechaos.repository;
-
-import com.recursivechaos.domain.Adjective;
+import com.recursivechaos.janus.domain.Adjective;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
 public interface AdjectiveRepository extends PagingAndSortingRepository<Adjective, Long> {

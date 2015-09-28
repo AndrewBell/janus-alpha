@@ -9,6 +9,7 @@
   <packaging>pom</packaging>
 
   <modules>
+    <module>common-domain</module>
     <module>eureka-server</module>
     <module>noun-service</module>
     <module>adjective-service</module>
@@ -50,15 +51,6 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-      </plugin>
-    </plugins>
-  </build>
 
   <dependencyManagement>
     <dependencies>

@@ -5,9 +5,10 @@
  * Licensed under MIT License 2015. See license.txt for details.
  */
 
-package com.recursivechaos.repository;
+package com.recursivechaos.janus.controller.repository;
 
 import com.recursivechaos.JanusAdjectiveServiceApplication;
+import com.recursivechaos.janus.repository.AdjectiveRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
