@@ -5,9 +5,9 @@
  * Licensed under MIT License 2015. See license.txt for details.
  */
 
-package com.recursivechaos.repository;
+package com.recursivechaos.janus.controller.repository;
 
-import com.recursivechaos.domain.Noun;
+import com.recursivechaos.janus.domain.Noun;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
 public interface NounRepository extends PagingAndSortingRepository<Noun, Long>{
