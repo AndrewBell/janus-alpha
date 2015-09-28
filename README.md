@@ -16,7 +16,7 @@ Docker - https://docs.docker.com/installation/ This can be installed locally, or
 
 To test, build, and create docker images of all services:
 
-`mvn clean install`
+`mvn install`
 
 ## Run ##
 
