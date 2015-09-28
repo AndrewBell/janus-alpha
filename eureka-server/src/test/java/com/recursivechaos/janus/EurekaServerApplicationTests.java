@@ -1,4 +1,4 @@
-package com.recursivechaos;
+package com.recursivechaos.janus;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
