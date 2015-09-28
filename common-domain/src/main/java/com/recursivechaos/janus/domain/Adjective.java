@@ -5,7 +5,7 @@
  * Licensed under MIT License 2015. See license.txt for details.
  */
 
-package com.recursivechaos.domain;
+package com.recursivechaos.janus.domain;
 
 import lombok.*;
 import org.springframework.hateoas.ResourceSupport;
