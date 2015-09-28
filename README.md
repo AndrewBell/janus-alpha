@@ -10,7 +10,7 @@ Java 8 - http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-
 
 Maven - http://maven.apache.org/download.cgi
 
-Docker - https://docs.docker.com/installation/ This can be installed locally, or remotely if you set an environment variable DOCKER_HOST=tcp://<remoteip>:2375
+Docker - https://docs.docker.com/installation/ This can be installed locally, or remotely if you set an environment variable `DOCKER_HOST=tcp://<remoteip>:2375`
 
 ## Build ##
 
